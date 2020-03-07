@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+    
+    <title>Document</title>
+</head>
+<body>
+    <div class="cont">
+        <div class = "colored-div " data-target="active">
+            <span class ="span-text ">Sign In</span>
+        </div>
+        <div class="prompet-div active border border-dark rounded"  >
+            <div class="prompet">
+                <div class="span-input">
+                    Username : <input class="input-text rounded" type="text" name="username">
+                    <br><br>
+                    Password  : <input class="input-text rounded" type="text" name="username">
+
+                </div>
+                <button type="button" class="btn btn-success"id="ok">Sign In</button>
+                <button type="button" class="btn btn-danger" id="cancel">Cancel</button>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="qcont">
+        <div class="main">
+            
+            <div class="questions">
+                <div class="timer">
+                    <img class ="pl-5 pt-2" src="icons/deadline.png" alt="timer">
+                    <span >time</span>
+                </div>
+                <div class = "question-text">
+                    <p id="qtext">question here?</p>
+                </div>
+                <div class="question-checks">
+                    <form id="form">
+                        <p>Please select :</p>
+                          <div class="row justify-content-around">
+                            <div class="col-xl-3 col-md-3 mb-3 text-center ">
+                                <input class = "check" id="check0" type="radio" name="gender" value="male"data-targetPlace = "0"><span id = "id0"></span>
+                            </div>
+                            <div class="col-xl-3 col-md-3 mb-3 text-center">
+                                <input class = "check" id="check1" type="radio" name="gender" value="female" data-targetPlace = "1"><span id = "id1"></span>
+                            </div>
+                            <div class="col-xl-3 col-md-3 mb-3 text-center">
+                                <input class = "check" id="check2" type="radio" name="gender" value="female" data-targetPlace = "2"><span id = "id2"></span>
+                            </div>
+                            <div class="col-xl-3 col-md-3 mb-3 text-center">
+                                <input class = "check" id="check3" type="radio" name="gender" value="female" data-targetPlace = "3"><span id = "id3"></span>
+                            </div>
+                        </div>
+                        </form>
+                </div>
+                
+            </div>
+            <div class = "slider">
+                    <div class="row pt-5 justify-content-around">
+                        <div class="col-xl-3 col-md-3 mb-3 text-center">
+                            <img id = "prev" class="slider-btn" src="icons/arrowhead-thin-outline-to-the-left.png" alt="left arrow" data-target="prev">
+                        </div>
+                        <div class="col-xl-3 col-md-3 mb-3 text-center">
+                            <nav aria-label="Page navigation example">
+                                <ul class="pagination justify-content-center slider-btn">
+                                  <li class="page-item"><a class="page-link text-dark" href="#" data-target="pagination">1</a></li>
+                                  <li class="page-item"><a class="page-link text-dark" href="#" data-target="pagination">2</a></li>
+                                  <li class="page-item"><a class="page-link text-dark" href="#" data-target="pagination">3</a></li>
+                                  <li class="page-item"><a class="page-link text-dark" href="#" data-target="pagination">4</a></li>
+                                  <li class="page-item"><a class="page-link text-dark" href="#" data-target="pagination">5</a></li>
+                                </ul>
+                              </nav>
+                        </div>
+                        <div class="col-xl-3 col-md-3 mb-3 text-center ">
+                            <!-- <i class="fas fa-chevron-right"></i> -->
+                            <img id = "next" class="slider-btn" src="icons/right-arrow (1).png" alt="right arrow" data-target="next">
+                        </div>
+                        <div class="col-xl-3 col-md-3 mb-3 text-center " >
+                            <img id = "mark" class="slider-btn" src="icons/icons8-flag-2-32.png" alt="question flag" data-target="mark">
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+            
+            <div id="marks" class = "marked" data-target="marked">
+                <p id = "marked-ques">Marked Question</p>
+            </div>
+            
+        </div>
+
+    <script src="main.js"></script>
+</body>
+</html>
